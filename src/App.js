@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Events from './pages/Events';
+import Museum from './pages/Museum';
+import Arts from './pages/Arts';
+import Galleries from './pages/Galleries';
+import Login from './pages/Login';
+import Explore from './pages/Explore';
+import ArtDetail from './ArtDetail';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="events" element={<Events />} />
+          <Route path="museum" element={<Museum />} />
+          <Route path="arts" element={<Arts />} />
+          <Route path="galleries" element={<Galleries />} />
+          <Route path="login" element={<Login />} />
+          <Route path="explore" exact element={<Explore />} />
+
+          <Route path="/explore/:id" element={<ArtDetail />} />
+          
+           
+        </Routes>
+    </Router>
   );
 }
 
