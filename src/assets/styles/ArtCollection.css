@@ -1,13 +1,14 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 .ac{
     min-height: 100vh;
+    padding-bottom: 30px;
 }
 .explorebg{
   background-color: #110C00;
 }
 .ac__desc{
-    margin-top: 70px;
-    padding: 60px 33px;
+    margin-top: 10px;
+    padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     
@@ -17,7 +18,6 @@
     margin-top: 30px;
     width: 400px;
     flex: 50%;
-
     display: flex;
     justify-content: right;
 }
@@ -28,22 +28,23 @@
 }
 .ac__desc_text__title{
     font-weight: 700;
-    line-height: 72px;
+    line-height: 50px;
     font-size: 48px;
 }
 .ac__desc_text__caption{
-    max-width: 632px;
-    font-size: 20px;
+    padding-top: 15px;
+    max-width: 450px;
+    font-size: 17px;
 }
 .ac__desc__form__input{
-    width: 100%;
-    height: 66px;
+    width: 70%;
+    height: 46px;
     border-radius: 51px;
     border: none;
     background-color: rgba(26, 20, 5, 1);
     padding-left: 30px; 
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 .ac__desc__form__input::placeholder{
     font-size: 18px;
@@ -63,7 +64,10 @@
     outline: 1px solid rgba(251, 175, 0, 1);
 
 }
-
+.more_explore{
+    display:  flex;
+    justify-content: center;
+}
         /* ART PREVIEW SECTION */
 .art__preview{
     display: flex;
@@ -78,7 +82,7 @@
 }
 .art__previewCard{
     margin-top: 50px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 
 }
 .art__previewImg{
@@ -128,9 +132,36 @@
     .ac__desc__form__input{
         width: 100%
     }
-}
-@media screen and (max-width : 768px) {
     .art__previewCard{
         width: 200px;
+    }
+    .ac__desc_text__title{
+        font-size: 32px;
+    }
+    .ac__desc_text__caption{
+        max-width: 100%;
+    }
+    
+    .art__previewImg{
+        width: 100%;
+        height: 226px;
+    }
+    .art__previewImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 30%;
+    }
+    
+    .art__previewTitle{
+        font-size: 19px;
+    }
+    .art__previewDate{
+        font-size: 13px;
+        padding-top: 31px;
+        padding-bottom: 7px;
+    }
+    .art__previewLocation{
+        font-size: 12px;
     }
 }

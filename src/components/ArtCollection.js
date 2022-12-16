@@ -109,16 +109,16 @@ function ArtCollection() {
                     </div> )
             }
             
-
-              <Link to="/explore">
-                <div className='ExploreBtn_wrap'>
-                    <div className='ExploreBtn'>
-                        Explore More
-                        </div>  
-                </div>  
-              </Link>
-             
         </div>
+            <div className='more_explore'>
+                <Link to="/explore">
+                    <div className='ExploreBtn_wrap'>
+                        <div className='ExploreBtn'>
+                            Explore More
+                            </div>  
+                    </div>  
+                    </Link>
+            </div>
     </div>
   )
 }

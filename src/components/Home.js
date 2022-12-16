@@ -1,7 +1,6 @@
 import React from 'react';
 import "../assets/styles/Home.css";
 import HeadSculpt from "../assets/images/png/HeadSculpt.png";
-import FloatingNet from "../assets/images/png/floatingNet.png";
 import ArtCollection from './ArtCollection';
 import { Link } from 'react-router-dom';
 
@@ -31,14 +30,8 @@ function Home() {
 
         {/* images  */}
           <div className='home__artImage'>
-            <div className='headSculpt'>
-              {/* <div className='floatingNet'>
-                <img src={FloatingNet} alt="floating net" />
-              </div> */}
-                <img className='headSculpt__img' src={HeadSculpt} alt="section 1 image" />
-              </div>
+            <img className='headSculpt__img' src={HeadSculpt} alt="section 1 image" />
           </div>
-          
       </div>
 
       <ArtCollection />
